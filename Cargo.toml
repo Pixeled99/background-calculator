@@ -1,0 +1,11 @@
+[package]
+name = "kbm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+enigo = "0.1.2"
+rdev = "0.5.2"
+termion = "2.0.1"
