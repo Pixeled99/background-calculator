@@ -11,7 +11,7 @@ fn callback(event: Event){
         Some(string) => string,
         None => String::new()
     };
-    if result.is_empty(){
+    if !result.is_empty(){
         unsafe {
             if result == "\u{8}" {
                 TYPED.pop();
@@ -51,6 +51,7 @@ fn callback(event: Event){
             }
             num1 = num1.chars().rev().collect();
             num2 = num2.chars().rev().collect();
+            println!("{} {} {}", num1, symbol, num2);
             if !num1.is_empty() && !num2.is_empty() && !symbol.is_empty() {
                 let answer = match symbol.as_str(){
                     "+" => num1.parse::<f64>().unwrap() + num2.parse::<f64>().unwrap(),

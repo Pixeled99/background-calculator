@@ -8,4 +8,3 @@ edition = "2021"
 [dependencies]
 enigo = "0.1.2"
 rdev = "0.5.2"
-termion = "2.0.1"
