@@ -1,5 +1,5 @@
 [package]
-name = "background-calculator"
+name = "background-utils"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 enigo = "0.1.2"
 rdev = "0.5.2"
+once_cell = "1.17.1"
